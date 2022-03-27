@@ -7,6 +7,8 @@
  * Time: 22:58
  */
 
+namespace Wetalou\Sot;
+
 /**
  * 冒泡排序
  * @param $arr
