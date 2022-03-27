@@ -9,22 +9,25 @@
 
 namespace Wetalou\Sot;
 
-/**
- * 冒泡排序
- * @param $arr
- * @return mixed
- */
-function bubbleSort($arr)
+class Sort
 {
-    $len = count($arr);
-    for ($i=0; $i<$len; $i++) {
-        for ($j=0; $j<$len-$i; $j++) {
-            if ($arr[$j] > $arr[$j+1]) {
-                $temp = $arr[$j];
-                $arr[$j] = $arr[$j + 1];
-                $arr[$j + 1] = $temp;
+    /**
+     * 冒泡排序
+     * @param $arr
+     * @return mixed
+     */
+    public  function bubbleSort($arr)
+    {
+        $len = count($arr);
+        for ($i=0; $i<$len; $i++) {
+            for ($j=0; $j<$len-$i; $j++) {
+                if ($arr[$j] > $arr[$j+1]) {
+                    $temp = $arr[$j];
+                    $arr[$j] = $arr[$j + 1];
+                    $arr[$j + 1] = $temp;
+                }
             }
         }
+        return $arr;
     }
-    return $arr;
 }
