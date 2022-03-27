@@ -1,5 +1,11 @@
 {
   "name": "wetalou/sort",
   "type": "library",
-  "description": "sort"
+  "description": "php sort function",
+  "authors":[
+    {
+      "name":"wetalou",
+      "email":"1150895809@qq.com"
+    }
+  ]
 }
