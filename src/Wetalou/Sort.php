@@ -7,7 +7,7 @@
  * Time: 22:58
  */
 
-namespace Wetalou\Sort;
+namespace Wetalou;
 
 class Sort
 {
@@ -16,11 +16,11 @@ class Sort
      * @param $arr
      * @return mixed
      */
-    public  function bubbleSort($arr)
+    public static function bubbleSort($arr)
     {
         $len = count($arr);
-        for ($i=0; $i<$len; $i++) {
-            for ($j=0; $j<$len-$i; $j++) {
+        for ($i=0; $i<$len-1; $i++) {
+            for ($j=0; $j<$len-$i-1; $j++) {
                 if ($arr[$j] > $arr[$j+1]) {
                     $temp = $arr[$j];
                     $arr[$j] = $arr[$j + 1];
