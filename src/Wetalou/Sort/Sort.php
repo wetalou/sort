@@ -7,7 +7,7 @@
  * Time: 22:58
  */
 
-namespace Wetalou\Sot;
+namespace Wetalou\Sort;
 
 class Sort
 {
